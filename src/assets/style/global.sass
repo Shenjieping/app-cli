@@ -1,0 +1,80 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+
+ul, ol, li
+    list-style: none
+
+a
+    text-decoration: none
+    color: #333
+    &:focus
+        text-decoration: none
+
+
+input
+    outline: none
+
+.fade-in
+    &-enter-active,
+    &-leave-active
+        transition: all .2s cubic-bezier(0.55, 0, .1, 1)
+
+
+    &-enter,
+    &-leave-active
+        opacity: 0
+
+
+.fade-linear
+    &-enter-active，
+    &-leave-active
+        transition: opacity .1s linear
+
+
+    &-enter,
+    &-leave-active
+        opacity: 0
+
+
+.icon
+    &-content
+        display: inline-block
+        padding: 0 5px
+        color: #aaa
+        border: 1px solid #aaa
+        font-size: 24px
+        line-height: 35px
+        border-radius: 10px
+        width: 65px
+        height: 35px
+
+    &-region
+        display: inline-block
+        padding: 0 10px
+        color: rgb(30, 122, 222)
+        border: 1px solid rgb(30, 122, 222)
+        font-size: 24px
+        line-height: 40px
+        border-radius: 10px
+
+
+.clear
+    zoom: 1
+    &::after
+        content: ''
+        display: block
+        height: 0
+        width: 0
+        visibility: visible
+        clear: both
+        overflow: hidden
+
+
+.pull-left
+    float: left
+
+.pull-right
+    float: right
