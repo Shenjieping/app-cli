@@ -5,6 +5,7 @@
 */
 import Vue from 'vue';
 import Vuex from 'vuex';
+import IO from 'http';
 Vue.use(Vuex);
 
 const store = new Vuex.Store({

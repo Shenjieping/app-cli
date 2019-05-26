@@ -5,7 +5,7 @@
 */
 /* eslint-disable */
 import axios from 'axios';
-import urls from '@/api/urls.js';
+import urls from '@/assets/js/baseURL.js';
 import qs from 'qs';
 
 axios.interceptors.request.use(request => {
